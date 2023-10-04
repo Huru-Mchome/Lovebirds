@@ -1,0 +1,247 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  margin: 0%;
+  padding: 0%;
+}
+.main{
+    display: flex;
+}
+.side1{
+    width: 50%;
+}
+.background {
+    background-image: url('images/pic1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 80vh;
+  }
+.txt1{
+    background-color: hsl(153, 29%, 71%);
+    width: 100%;
+    height: 20vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 7% 21%;
+}
+.side2{
+    width: 50%;
+}
+.txt2{
+    padding-top: 5%;
+    font-size: 2.7rem;
+    text-align: center;
+}
+.txt2 h2{
+    font-family: cursive;
+    margin-bottom: 20px;
+}
+.txt2 p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(125, 125, 125);
+}
+.credentials{
+    padding: 5% 15%;
+}
+.form1{
+    margin-bottom: 30px;
+}
+.form2{
+    margin-bottom: 7px;
+}
+.input-group {
+    position: relative;
+  }
+  .input {
+    box-sizing: border-box;
+    outline: none;
+    border: 0px;
+    border-bottom: 1px solid rgb(174, 173, 173);
+    padding: 10px;
+    padding-left: 0px;
+    font-size: 2rem;
+    width: 100%;
+  }
+  .placeholder {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    color: rgb(96, 95, 95);
+    font-size: 14px;
+    transition: 0.4s;
+    pointer-events: none;
+  }
+  .input:focus + .placeholder {
+    top: -11px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  .txt3{
+    display: flex;
+    justify-content: end;
+    margin-bottom: 20px;
+  }
+  .txt3 p{
+    color: green;
+    font-size: .7rem;
+  }
+  .txt3 p:hover{
+    color: black;
+    transition: .3s;
+  }
+  .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .credentials form button{
+    outline: none;
+    padding: 10px 100px;
+    border: 0ch;
+    border-radius: 30px;
+    background-color: rgb(63, 63, 63);  
+    color: white;
+    font-size: 12.3px;
+  }
+  .credentials form button:hover{
+    background-color: white;
+    border: 1px solid rgb(96, 95, 95);
+    transition: .3s;
+    color: rgb(96, 95, 95);
+  }
+  .divider {
+    display: flex;
+    align-items: center;
+    padding: 1% 25%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .divider::before, .divider::after {
+    flex: 1;
+    content: '';
+    padding: .2px;
+    background-color: rgb(215, 215, 215);
+    margin: 10px;
+  }
+  .btn2{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  .credentials .btn2 button{
+    outline:none;
+    border: 0px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: white;
+  }
+  .credentials .btn2 button:hover{
+    background-color: #8bb2f0;
+    color: white;
+    transition: .4s;
+  }
+  .fa-google {
+    background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    margin-right: 5px;
+  }
+  .txt4{
+    display: flex;
+    justify-content: center;
+  }
+  .txt4 p{
+    color: rgb(96, 95, 95);
+  }
+  .txt4 a{
+    color: green;
+    text-decoration: underline rgb(164, 152, 205);
+  }
+  .txt4 a:hover{
+    color: rgb(164, 152, 205);
+    transition: .3s;
+  }
+ /* Media Query for Mobile Devices */
+ @media (max-width: 480px) {
+  body {
+      background-color: white;
+  }
+  .txt1{
+    font-size: 12px;
+    padding: 5% 10%;
+  }
+  .txt2{
+    font-size: 1.5rem;
+    padding: 15%;
+  }
+  .credentials form button{
+    padding: 10px 50px;
+  }
+  .divider{
+    padding: 5% 10%;
+  }
+  .btn2{
+    margin-bottom: 50px;
+  }
+  .txt4{
+    font-size: 12px;
+  }
+}
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+      background-color: white;
+  }
+  .txt1{
+    font-size: 12px;
+    padding: 5% 10%;
+  }
+  .txt2{
+    font-size: 1.8rem;
+    padding: 15%;
+  }
+  .credentials form button{
+    padding: 10px 50px;
+  }
+  .divider{
+    padding: 1% 10%;
+  }
+}
+
+/* Media Query for Tablets Ipads portrait mode */
+@media (min-width: 768px) and (max-width: 1024px){
+  body {
+      background-color: white;
+  }
+  .txt1{
+    font-size: 15px;
+  }
+}
+
+/* Media Query for Laptops and Desktops */
+@media (min-width: 1025px) and (max-width: 1280px){
+  body {
+      background-color: white;
+  }
+}
+
+/* Media Query for Large screens */
+@media (min-width: 1281px) {
+  body {
+      background-color: white;
+  }
+}
+  
